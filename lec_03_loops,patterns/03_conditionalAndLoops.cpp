@@ -56,11 +56,12 @@ if(b>a)
 }
 */
 
-int a;
-cout<<"enter the value of a "<<endl;
-cin>>a;
+ /*
+ 
+ int a;
+ cout<<"enter the value of a "<<endl;
+ cin>>a;
 
-/*
 if(a>0)
 {
 cout<<"A is postive"<<endl;
@@ -74,7 +75,6 @@ else{
     cout<<"A is 0"<<endl;
 }
 }
-*/
 
 //-----OR-----//
 
@@ -90,4 +90,61 @@ else{
     cout<<"A is zero"
     <<endl;
 }
+*/
+
+//----OUTPUT HOMEWORK 01----//
+/*
+int b=9;
+if(b==9)
+{
+    cout<<"NiNeY";
+
+}
+
+if(b>0)
+{
+    cout<<"POSTIVE";
+
+}
+else
+{
+    cout<<"Negative";
+}
+
+*/
+
+//----OUTPUT HOMEWORK 02----//
+/*
+Ques= given char ch a print a in lowercase smaller when a is btw a to z ; print  a is uppercase when a is btw A to Z; print a is numeric when a  is btw 0 to 9 
+*/
+
+//--IMportent--//
+/*
+//ASICE table
+
+Uppercase Alphabet: 65-90
+Lowercase Alphabet: 97-122
+Digit: 48-57
+
+
+char ch;
+cout<<"Enter the value of ch :"<<endl;
+cin>>ch;
+
+if(ch>=48&&ch<=57)
+{
+    cout<<"ch is an numeric"<<endl;
+
+}
+else if(ch>=97&&ch<=112){
+    cout<<"This is smallercase "
+    <<endl;
+}else if(ch>=65&&ch<=90)
+{
+    cout<<"This is uppercase"
+    <<endl;
+}
+*/
+
+
 }
