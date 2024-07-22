@@ -29,9 +29,65 @@ int main()
          << a << " " << b << endl;
 */
 
-int a,b;
-a=cin.get();
 
-cout <<"vlue of a is 
-+"
+/*
+int a,b;
+a=cin.get(); //cine.get() is used to take input and can take inputes such as tab enter space etc.
+cout <<"vlue of a is:"<<a<<endl;
+*/
+
+/*
+
+
+int a,b;
+cout<<"Enter the value of a" <<endl;
+cin>>a;
+cout<<"Enter the value of b"<<endl;
+cin>>b;
+
+if(a>b)
+{
+    cout<<"A is greater "<<endl;5
+
+}
+if(b>a)
+{
+    cout<<"B is greater"<<endl;
+}
+*/
+
+int a;
+cout<<"enter the value of a "<<endl;
+cin>>a;
+
+/*
+if(a>0)
+{
+cout<<"A is postive"<<endl;
+}
+else{
+if(a<0)
+{
+    cout<<"A is negitve"<<endl;
+}
+else{
+    cout<<"A is 0"<<endl;
+}
+}
+*/
+
+//-----OR-----//
+
+if(a>0)
+{
+    cout<<"A is postive"<<endl;
+}
+else if(a<0)
+{
+    cout<<"A is negtive"<<endl;
+}
+else{
+    cout<<"A is zero"
+    <<endl;
+}
 }
