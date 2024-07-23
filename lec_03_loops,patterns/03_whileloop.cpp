@@ -53,6 +53,7 @@ while (i<n)
         cout<<"Not prime for "<<i<<endl;
     }else{
         cout<<"prime for "<<i<<endl;
+    
     }
     i=i+1;
 }
