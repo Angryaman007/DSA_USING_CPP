@@ -61,7 +61,7 @@ while (row<=n)
     row=row+1;
 }
 
-  */
+ 
 
  int n;
  cin>>n;
@@ -82,4 +82,53 @@ while (row<=n)
     row=row+1;
  }
  
+// to print a pattern like this //
+AAAAA
+BBBBB
+CCCCC
+DDDDD
+EEEEE
+
+ int n;
+ cin>>n;
+
+ int row=1;
+ while (row<=n)
+ {
+int col=1;
+while (col<=n)
+{
+    char ch='A'+row-1;
+    cout<<ch;
+    col=col+1;
+}
+cout<<endl;
+row=row+1;
+ }
+    
+// to print a pattern like this 
+ABCDE
+ABCDE
+ABCDE
+ABCDE
+ABCDE
+int n;
+cin>>n;
+int row=1;
+while (row<=n)
+{
+    int col=1;
+    while (col<=n)
+    {
+        char ch ='A'+col-1;
+        cout<<ch;
+        col=col+1;
+    }
+    cout<<endl;
+    row=row+1;
+}
+*/ 
+
+
+
 }
