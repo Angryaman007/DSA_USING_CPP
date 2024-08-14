@@ -15,7 +15,7 @@ int main ()
     //whether 1 is present in it or not?
 
     cout<<"Enter the element to search for "<<endl;
-
+    
     int key;
     cin>>key;
 
@@ -31,6 +31,6 @@ int main ()
 
 
     return 0;
-    
+
 
 }
