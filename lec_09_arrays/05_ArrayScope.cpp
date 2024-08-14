@@ -1,9 +1,15 @@
 #include<iostream>
 using namespace std;
 
+
+
 void update(int arr[], int n){
 
 cout<<"Inside the fuction"<<endl;
+//updating arrays first element 
+arr[0]=120;
+
+
 //prinitng the array 
 for(int i=0; i<3; i++){
     cout<<arr[i]<<" ";
