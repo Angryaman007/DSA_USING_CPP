@@ -38,6 +38,6 @@ printArray(odd,5);
     return 0;
 }
 
-//output will be 
+//output will be
 // 2 5 4 9 6 7 0 1 
-// 33 11 76 9 43
+// 33 11 76 9 43  
