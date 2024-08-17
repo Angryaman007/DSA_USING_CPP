@@ -55,3 +55,5 @@ Note:
 
 //leatcode promblem no 1207
 //leatcode promblem no 442
+//// sort 012 for the {0,2,2,1,0,1,1,0,2}
+//output will be [0 0 0 1 1 1 2 2 2]
