@@ -28,5 +28,5 @@ return 0;
 int main()
 {
     int arr[5]={3,8,10,17,1};
-    cout<<"pivot is "<<getPivot(arr,5)<<endl;
+    cout<<"pivot is "<<getPivot(arr,5)<<endl ;
 }
