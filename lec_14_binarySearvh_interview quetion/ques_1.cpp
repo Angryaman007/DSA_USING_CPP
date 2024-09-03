@@ -20,7 +20,7 @@ while (s<e)
     }
     mid=s+(e=s)/2;
 }
-return 0;
+return s;
 
 
 }
