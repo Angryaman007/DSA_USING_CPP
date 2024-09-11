@@ -10,7 +10,7 @@ You are given an unsorted array consisting of N non-negative integers. Your task
 #include <algorithm>
 using namespace std;
 
-void selectionSort(vector<int>& arr, int n)
+int selectionSort(vector<int>& arr, int n)
 {   
     // Write your code here.
 
@@ -40,6 +40,6 @@ int main(){
     }
     cout << endl;
 
-    
+
     return 0;
 }
