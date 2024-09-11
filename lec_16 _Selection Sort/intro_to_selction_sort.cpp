@@ -18,7 +18,7 @@ int selectionSort(vector<int>& arr, int n)
       int minIndex = i;
 
       for (int j = i + 1; j < n; j++)
-    {
+    { 
 
         if(arr[j]<arr[minIndex])
         
@@ -30,7 +30,7 @@ int selectionSort(vector<int>& arr, int n)
 }
 
 int main(){
-    vector<int> arr = {1, 2, 8, 4, 9};  
+    vector<int> arr = {22,1, 2, 8, 4, 9,3,5,13,11,20,17};  
     int n=arr.size();
 
     selectionSort(arr, n);
