@@ -10,6 +10,17 @@ For example :
 Let ‘ARR’ be: [1, 4, 2]
 The sorted array will be: [1, 2, 4].
 
+WHY TO USE INSERITON SORT?
+
+ans: it is very adabltable alogorithm 
+and it is also stable used in short kind of arrays problem 
+kind of useful in when array is partial sorted. 
+
+TIME COMPLEXITY: O(N^2)
+SPACE COMPLEXITY: CONSTANT [ O(1)]
+
+BEST CASE COMPLEXITY IS : O(N)
+WORST CASE COMPLEXITY IS: O(N^2)
 
 
 */
