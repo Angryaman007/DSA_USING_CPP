@@ -24,4 +24,33 @@ Now s has no occurrences of "abc".
 
   
 */ 
+#include<iostream>
+#include<string>
+using namespace std;
+
+class Solution {
+public:
+    string removeOccurrences(string s, string part) {
+        while(s.length() != 0 && s.find(part) < s.length()) {
+            s.erase(s.find(part), part.length());
+        }
+        return s;
+    }
+};
+
+int main() {
+    Solution sol;
+
+    // Hardcoded input values
+    string s = "daabcbaabcbc";
+    string part = "abc";
+
+    // Call the function and get the result
+    string result = sol.removeOccurrences(s, part);
+
+    // Output the result
+    cout << "Resulting string: " << result << endl;
+
+    return 0;
+}
 
