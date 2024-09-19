@@ -51,7 +51,7 @@ int main()
             cin>>arr[row][col];
         }
     }
-    cout<<"printing the sum : "<<endl;
+    cout<<"printing the array : "<<endl;
      for(int row=0; row<3; row++)
     {
         for(int col=0; col<4; col++)
@@ -60,6 +60,10 @@ int main()
         }
         cout<<endl;
     }
+    cout<<"print row wise : "<<endl;
+
+    printSum(arr,3,3);
+    cout<<"print col wise "<<endl;
     printColsum(arr,3,3);
 return 0;
 }
