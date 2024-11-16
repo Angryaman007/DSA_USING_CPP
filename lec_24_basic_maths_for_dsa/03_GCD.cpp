@@ -1,6 +1,10 @@
 
 /*
 
+
+#_____Euclid Algorithm_____#
+
+
 ------formula-------
 
 gcd(a,b)=gcd(a-b,b)
@@ -10,6 +14,11 @@ or
 
 
 gcd(a,b)=gcd(a%b,b)
+
+------formula-------
+
+
+lcm(a,b)*gcd(a,b)=a*b
 
 
 */
