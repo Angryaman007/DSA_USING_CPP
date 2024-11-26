@@ -18,7 +18,8 @@ void update(int *p)
 int getSum(int *arr, int n)
 
 {
-    cout<<endl<<"size :"<<sizeof(arr)<<endl;
+    cout << endl
+         << "size :" << sizeof(arr) << endl;
     int sum = 0;
     for (int i = 0; i < n; i++)
     {
@@ -29,20 +30,23 @@ int getSum(int *arr, int n)
 int main()
 
 {
-   /*
-    int value = 5;
-    int *p = &value;
+    /*
+     int value = 5;
+     int *p = &value;
 
-    //    print(p);
+     //    print(p);
 
-    cout << "Before " << *p << endl;
+     cout << "Before " << *p << endl;
 
-    update(p);
+     update(p);
 
-    cout << "After " << *p << endl;
-*/
+     cout << "After " << *p << endl;
+ */
     int arr[5] = {1, 2, 3, 4, 5};
-    cout << "Sum is " << getSum(arr,5)<<endl;
+    cout << "Sum is " << getSum(arr, 5) << endl;
 
     return 0;
 }
+
+// study this https://www.naukri.com/code360/guided-paths/pointers/content/235645/offering/3168907 
+// and solve the question on codestudio 
