@@ -18,7 +18,8 @@ int main()
 char temp='z';
 char *p= &temp;
 
- 
+  
+  
 return 0;
 
 }
