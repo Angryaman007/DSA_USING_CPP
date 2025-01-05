@@ -2,6 +2,7 @@
 using namespace std;
 
 void update2(int& n){
+    
     n++;
 }
 
