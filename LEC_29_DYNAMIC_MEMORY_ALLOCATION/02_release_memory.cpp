@@ -47,6 +47,9 @@ int main()
         delete [] arr[i];
     }
     delete []arr;
-    
+
     return 0;
 }
+
+
+//home work to create a jaggered array in dyanmic memory 
