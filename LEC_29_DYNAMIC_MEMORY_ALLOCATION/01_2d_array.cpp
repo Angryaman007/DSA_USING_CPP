@@ -1,44 +1,44 @@
-//how to do dyanmic memory allocation in 2d array 
+// how to do dyanmic memory allocation in 2d array
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 int main()
 {
 
-int n;
-cin>>n;
-int** arr=new int*[n];
-for(int i=0; i<n; i++)
-{
-    arr[i]=new int[n];
+    int row;
+    cin >> row;
 
-}
+    int col;
+    cin >> col;
 
-//creation done 
+    // creating a 2d array
 
-
-
-//taking input 
-
-for(int i=0; i<n; i++)
-{
-    for(int j=0; j<n; j++)
+    int **arr = new int *[row];
+    for (int i = 0; i < row; i++)
     {
-        cin>>arr[i][j];
+        arr[i] = new int[col];
     }
-}
+    // creation done
 
-//taking input
-cout<<endl;
-for(int i=0; i<n; i++)
-{
-    for(int j=0; j<n; j++)
+    // taking input
+    for (int i = 0; i < row; i++)
     {
-        cout<<arr[i][j]<<" ";
+        for (int j = 0; j < col; j++)
+        {
+            cin >> arr[i][j];
+        }
     }
-    cout<<endl;
-    
-}
+
+    // taking output
+    cout << endl;
+    for (int i = 0; i < row; i++)
+    {
+        for (int j = 0; j < col; j++)
+        {
+            cout << arr[i][j] << " ";
+        }
+        cout << endl;
+    }
     return 0;
 }
