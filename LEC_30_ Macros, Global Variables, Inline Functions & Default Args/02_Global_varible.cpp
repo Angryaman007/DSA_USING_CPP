@@ -24,6 +24,6 @@ int main()
     cout << score << " in main " << endl;
     int i = 5;
     a(i);
-    b(i);
+    b(i); 
     return 0;
 }
