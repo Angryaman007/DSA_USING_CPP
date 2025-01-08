@@ -16,9 +16,9 @@ int main()
     int size = 5;
 
     print(arr, size, 2);
-    
+
 // using aruguments
-cout<<endl<<"Using Arguments"<<endl;
+cout<<endl<<"Using Arguments"<<endl; 
 
     print(arr, size);
 
