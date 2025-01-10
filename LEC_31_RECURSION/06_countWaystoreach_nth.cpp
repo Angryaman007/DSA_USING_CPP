@@ -62,9 +62,7 @@ int countDistinctWays(long long nStairs) {
 }
 
 int main() {
-    vector<int> inputs;
-    cin>>inputs;
-     // Sample Input 1
+    vector<int> inputs = {2, 2, 3}; // Sample Input 1
 
     // Print the output for each input
     for (int nStairs : inputs) {
