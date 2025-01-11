@@ -38,7 +38,7 @@ bool ans = linearSearch(arr,size,key);
 
 if(ans)
 {
-    cout<<" present "<<endl;
+    cout<<" present "<<endl; 
 
 }
 else{
