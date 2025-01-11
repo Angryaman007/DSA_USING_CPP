@@ -35,3 +35,11 @@ if(ans)
 }
     return 0;
 }
+
+/*
+HOME WORK
+
+input mein array like : [3,2,5,1,6]
+output mein arraY LIKE : SUM KRE  USING RECUSION NOT LOOP OUT PUT IS : 17 
+
+*/
