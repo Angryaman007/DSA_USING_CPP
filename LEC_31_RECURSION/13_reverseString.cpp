@@ -26,7 +26,7 @@ int main()
 cout<<endl;
 
     revers(name, 0, name.length() - 1);
-    cout<<endl;
+    cout<<endl; 
     cout << name << endl;
 
     return 0;
