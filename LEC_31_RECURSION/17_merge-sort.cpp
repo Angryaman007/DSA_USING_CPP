@@ -87,4 +87,6 @@ int main()
     cout << endl;
 
     return 0;
+    // time complexity is o(n logn) ? how???
+    //home work inverison count promblem 
 }
