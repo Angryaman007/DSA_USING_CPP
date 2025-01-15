@@ -85,4 +85,7 @@ int main()
      }
  
     return 0;
+
+    
 }
+// how to do this question using bits 
