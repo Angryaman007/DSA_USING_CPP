@@ -68,6 +68,6 @@ int main()
         cout << arr[i] << " ";
     }
     cout << endl;
-    //himework inplace sorting hai ya nhi ?  stabble hai ya nhi why quick sort is preferred over merge sort
-    // space complexity is o(n) time complexity is o(nlogn), worst is 0(n^2).
+    // himework inplace sorting hai ya nhi ?  stabble hai ya nhi why quick sort is preferred over merge sort
+    //  space complexity is o(n) time complexity is o(nlogn), worst is 0(n^2).
 }
