@@ -13,7 +13,7 @@ class Hero
 
 {
 
-// properties 
+    // properties
 private:
     char type;
 
@@ -59,24 +59,38 @@ public:
 
 int main()
 {
+    // static allocation
+    Hero a;
+    cout << "level is : "
+         << a.level << endl;
+    cout << " health is : "
+         << a.health << endl;
+    cout << " Type of : "
+         << a.getType() << endl;
+cout<<"\n"<<endl;
+    // dyanimacally allocation
+    Hero *b = new Hero;
 
-    // creation of object
+    b->setHealth(12);
+    b->setType('X');
+    b->setLevel('C');
+cout<<"\n"<<endl;
 
-    Hero Aman;
+ cout << "level is : "
+         << (*b).level << endl;
+    cout << " health is : "
+         << (*b).health << endl;
+    cout << " Type of : "
+         << (*b).getType() << endl;
+cout<<"\n"<<endl;
 
-    // getter
-    cout << "Aman type  is :" << Aman.getType() << endl;
-    Aman.health = 100;
-    Aman.setType('X');
-    Aman.level = 'A';
-
-    cout << "health is :" << Aman.health << endl;
-    cout << "level is : " << Aman.level << endl;
-    // we can use getter and setter to acces the private class outside the defined calass.
-    cout << "type is : " << Aman.getType() << endl;
-
-    cout<<"size of aman :"<< sizeof(Aman)<<endl;
-     
+/// or we can write this as 
+ cout << "lever is : "
+         << b->level << endl;
+    cout << " health is : "
+         << b->health << endl;
+    cout << " Type of : "
+         << b->getType() << endl;
 
     return 0;
 }
