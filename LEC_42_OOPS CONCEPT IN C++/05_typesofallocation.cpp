@@ -80,7 +80,7 @@ cout<<"\n"<<endl;
          << (*b).level << endl;
     cout << " health is : "
          << (*b).health << endl;
-    cout << " Type of : "
+    cout << " Type of : "  
          << (*b).getType() << endl;
 cout<<"\n"<<endl;
 
