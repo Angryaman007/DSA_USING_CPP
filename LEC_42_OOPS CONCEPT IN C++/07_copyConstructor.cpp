@@ -80,6 +80,7 @@ public:
     char getLevel()
     {
         return level;
+        
     }
 
     void setHealth(int h)
