@@ -107,7 +107,7 @@ void deletNOde(int position, Node *&head)
             cnt++;
         }
         prev->next = curr->next;
-        curr->next=NULL;
+        curr->next = NULL;
         delete curr;
     }
 }
@@ -129,8 +129,9 @@ int main()
 
     InsertAtPostion(tail, head, 4, 22);
     print(head);
-    // cout<<"head"<<head->data<<endl;
-    // cout<<"tail"<<tail->data<<endl;
+
+    cout<<"head "<<head->data<<endl;
+    cout<<"tail "<<tail->data<<endl;
 
     deletNOde(3, head);
     print(head);
