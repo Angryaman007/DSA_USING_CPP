@@ -99,6 +99,7 @@ void insertAtPosition(Node*& tail, Node*& head, int position, int d) {
     temp->next = nodeToInsert;
     nodeToInsert->prev = temp;
 }
+ /*
 void deletNode(int position, Node *&head)
 {
     // deleting first or start node
@@ -114,7 +115,7 @@ void deletNode(int position, Node *&head)
     else
     {
         
-        /*
+       
         // delteting any middle node or last node
         Node *curr = head;
         Node *prev = NULL;
@@ -130,8 +131,62 @@ void deletNode(int position, Node *&head)
         prev->next=curr->next;
         curr->next==NULL;
         delete curr;
-        */
+       
     }
+}
+ */
+// Delete a node at a specific position
+void deletNode(int position, Node*& head, Node*& tail) {
+    // If the list is empty
+    if (head == NULL) {
+        cout << "List is empty!" << endl;
+        return;
+    }
+
+    // Deleting the first node
+    if (position == 1) {
+        Node* temp = head;
+        if (head->next != NULL) {
+            head = head->next;
+            head->prev = NULL;
+        } else {
+            head = NULL;
+            tail = NULL; // If only one node existed
+        }
+        temp->next = NULL;
+        delete temp;
+        return;
+    }
+
+    // Deleting any middle or last node
+    Node* curr = head;
+    int cnt = 1;
+
+    // Traverse to the node at 'position'
+    while (cnt < position && curr != NULL) {
+        curr = curr->next;
+        cnt++;
+    }
+
+    // If position is invalid
+    if (curr == NULL) {
+        cout << "Invalid position!" << endl;
+        return;
+    }
+
+    // If deleting the last node, update the tail pointer
+    if (curr->next == NULL) {
+        tail = curr->prev;
+        tail->next = NULL;
+    } else {
+        curr->next->prev = curr->prev;
+        curr->prev->next = curr->next;
+    }
+
+    // Clean up the deleted node
+    curr->next = NULL;
+    curr->prev = NULL;
+    delete curr;
 }
 
 int main() {
@@ -168,7 +223,7 @@ int main() {
     print(head);
     cout << "head: " << head->data << " tail: " << tail->data << endl;
     
-    deletNode(7,head);
+    deletNode(7,head,tail);
     print(head);
     cout << "head: " << head->data << " tail: " << tail->data << endl;
 
