@@ -42,8 +42,8 @@ public:
 
 bool isCircular(Node *head)
 {
-    if (head == NULL) // Empty list is not circular
-        return false;
+    if (head == NULL) // An empty list is circular
+        return true;
 
     Node *slow = head;
     Node *fast = head;
@@ -53,9 +53,10 @@ bool isCircular(Node *head)
         slow = slow->next;
         fast = fast->next->next;
 
+        // If a loop is detected
         if (slow == fast)
         {
-            // Check if the cycle points back to the head
+            // Check if the loop connects back to head
             Node *temp = slow;
             do
             {
@@ -71,27 +72,54 @@ bool isCircular(Node *head)
     return false;
 }
 
-// Example usage:
 int main()
 {
-    Node *head = new Node(1);
-    Node *second = new Node(2);
-    Node *third = new Node(7);
-    Node *fourth = new Node(4);
-    Node *fifth = new Node(8);
-    Node *sixth = new Node(3);
+    int T;
+    cin >> T;
 
-    head->next = second;
-    second->next = third;
-    third->next = fourth;
-    fourth->next = fifth;
-    fifth->next = sixth;
-    // sixth->next = head; // Uncomment to make it circular
+    while (T--)
+    {
+        int n;
+        cin >> n;
 
-    if (isCircular(head))
-        cout << "The list is circular.\n";
-    else
-        cout << "The list is not circular.\n";
+        if (n == 0)
+        {
+            cout << "True" << endl;
+            continue;
+        }
+
+        int data;
+        cin >> data;
+        Node *head = new Node(data);
+        Node *curr = head;
+
+        for (int i = 1; i < n; i++)
+        {
+            cin >> data;
+            curr->next = new Node(data);
+            curr = curr->next;
+        }
+
+        int lastNodeLink;
+        cin >> lastNodeLink;
+
+        // Link last node to the node with value = lastNodeLink (if exists)
+        if (lastNodeLink != -1)
+        {
+            Node *temp = head;
+            while (temp != NULL)
+            {
+                if (temp->data == lastNodeLink)
+                {
+                    curr->next = temp;
+                    break;
+                }
+                temp = temp->next;
+            }
+        }
+
+        cout << (isCircular(head) ? "True" : "False") << endl;
+    }
 
     return 0;
 }
