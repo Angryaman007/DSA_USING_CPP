@@ -67,9 +67,7 @@ Constraints:
 1 <= k <= n
 
 Time Limit: 1 sec
-
-
-
+ 
 */
 #include <iostream>
 using namespace std;
