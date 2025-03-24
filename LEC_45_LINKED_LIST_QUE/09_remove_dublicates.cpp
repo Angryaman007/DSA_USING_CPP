@@ -113,7 +113,7 @@ Node *removeDuplicates(Node *head)
         }
     }
     return head;
-}
+}  
 int main()
 {
     // Creating a sample doubly linked list with duplicates: 1 <-> 1 <-> 2 <-> 3 <-> 3
