@@ -71,10 +71,25 @@ int main()
     st.push(22);
     st.push(33);
     st.push(44);
+    st.push(22);
+    st.push(33);
+    st.push(44);
 
     cout << st.peek() << endl;
 
     st.pop();
     cout << st.peek() << endl;
+    st.pop();
+    cout << st.peek() << endl;
+    st.pop();
+    cout << st.peek() << endl;
+
+    if(st.isEmpty()){
+        cout<<"stack is empty mere bhai "<<endl;
+    }
+    else{
+        cout<<"stack is not empty mere bhai "<<endl;
+    }
+
 
 }
