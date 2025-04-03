@@ -42,7 +42,7 @@ void reverseStack(stack<int> &stack) {
         return ;
     }
 
-
+// to take out  first element 
     int num =stack.top();
     stack.pop();
 
